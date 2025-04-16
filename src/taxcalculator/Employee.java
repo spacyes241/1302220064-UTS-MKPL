@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
-
+  
 
 import java.time.LocalDate;
 
@@ -12,16 +12,14 @@ public class Employee {
     private String employeeId;
     /* menambahkan personal info untuk meghindari badsmells data-clumps*/
     private PersonalInfo personalInfo;
-
     private LocalDate joinDate;
     private boolean isForeigner;
-    private boolean gender; //true = Laki-laki, false = Perempuan
+    /* menambahkan class gender untuk menghindari bad smells primitive-obsession  */
+    private Gender gender;
     private Salary salary;
     private Family family;
-        
-	
 
-    public Employee(String employeeId, PersonalInfo personalInfo, LocalDate joinDate, boolean isForeigner, boolean gender) {
+    public Employee(String employeeId, PersonalInfo personalInfo, LocalDate joinDate, boolean isForeigner, Gender gender) {
         this.employeeId = employeeId;
         this.personalInfo = personalInfo;
         this.joinDate = joinDate;

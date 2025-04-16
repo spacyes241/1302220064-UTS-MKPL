@@ -10,10 +10,8 @@ import java.time.LocalDate;
 
 public class Employee {
     private String employeeId;
-    private String firstName;
-    private String lastName;
-    private String idNumber;
-    private String address;
+    /* menambahkan personal info untuk meghindari badsmells data-clumps*/
+    private PersonalInfo personalInfo;
 
     private LocalDate joinDate;
     private boolean isForeigner;
@@ -23,12 +21,9 @@ public class Employee {
         
 	
 
-    public Employee(String employeeId,String firstName, String lastName, String idNumber, String address, LocalDate joinDate, boolean isForeigner, boolean gender) {
+    public Employee(String employeeId, PersonalInfo personalInfo, LocalDate joinDate, boolean isForeigner, boolean gender) {
         this.employeeId = employeeId;
-        this.firstName = firstName;
-	this.lastName = lastName;
-	this.idNumber = idNumber;		
-        this.address = address;
+        this.personalInfo = personalInfo;
         this.joinDate = joinDate;
         this.isForeigner = isForeigner;
         this.gender = gender;
@@ -63,3 +58,4 @@ public class Employee {
         return TaxCalculator.calculateAnnualTax(salary, workingMonths, family);
     }
 }
+ 

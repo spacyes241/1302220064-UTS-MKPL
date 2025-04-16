@@ -3,18 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taxcalculator;
+package taxcalculator.employee;
 
 /**
  *
  * @author Farrel Haykal
  */
-public class Child {
-    private String name;
-    private String idNumber;
-
-    public Child(String name, String idNumber) {
-        this.name = name;
-        this.idNumber = idNumber;
-    }
+public enum Gender {
+    MALE, FEMALE
 }

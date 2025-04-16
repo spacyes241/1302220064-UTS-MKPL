@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taxcalculator;
+package taxcalculator.employee;
 
 /**
  *
@@ -16,7 +16,7 @@ public class Salary {
 
     public void setSalary(int grade, boolean isForeigner) {
        int baseSalary = 0;
-switch (grade) {
+    switch (grade) {
     case 1:
         baseSalary = 3000000;
         break;

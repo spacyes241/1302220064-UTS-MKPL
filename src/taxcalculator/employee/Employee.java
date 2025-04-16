@@ -1,4 +1,4 @@
-package taxcalculator;
+package taxcalculator.employee;
 
 import java.time.LocalDate;
 import java.time.Month;

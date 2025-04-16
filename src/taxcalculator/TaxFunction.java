@@ -1,4 +1,4 @@
-package lib;
+package taxcalculator;
 
 public class TaxFunction {
 
